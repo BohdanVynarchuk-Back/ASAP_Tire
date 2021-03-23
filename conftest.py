@@ -1,21 +1,21 @@
-import pytest
-from selenium import webdriver
-
-from base_data.main_data import MainData
-driver = None
-
-@pytest.fixture(scope='session', autouse=True)
-def browser():
-    global driver
-    if driver is None:
-        driver = webdriver.Chrome()
-        driver.implicitly_wait(5)
-        driver.maximize_window()
-        driver.get(MainData.BaseUrl)
-        yield driver
-        driver.quit()
-
-
+# import pytest
+# from selenium import webdriver
+#
+# from base_data.main_data import MainData
+# driver = None
+#
+# @pytest.fixture(scope='session', autouse=True)
+# def browser():
+#     global driver
+#     if driver is None:
+#         driver = webdriver.Chrome()
+#         driver.implicitly_wait(5)
+#         driver.maximize_window()
+#         driver.get(MainData.BaseUrl)
+#         yield driver
+#         driver.quit()
+#
+#
 # @pytest.mark.hookwrapper
 # def pytest_runtest_makereport(item):
 #     """

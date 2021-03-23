@@ -1,0 +1,161 @@
+Open/Reopen
+
+
+AT-192
+AT-193
+AT-194
+
+
+closed
+
+
+
+
+1. create Customer
+{
+    "reminders": false,
+    "firstName": "1Check order",
+    "lastName": "Order",
+    "zipCode": "30310",
+    "phoneNumber": "string",
+    "smsNotification": false,
+    "email": "string@asap.com",
+    "objectId": "093A012B-782E-4B46-959F-C7CAE3AD24AB"
+}
+2. Create Order
+{
+    "frontTireCount": null,
+    "address": null,
+    "tireDisposal": false,
+    "woid": null,
+    "arrivalTo": null,
+    "arrivalFrom": null,
+    "troid": null,
+    "step": null,
+    "rearTireCount": null,
+    "objectId": "909286EC-E7C3-4EDF-9652-F257EBE35941",
+    "customer": {
+        "objectId": "093A012B-782E-4B46-959F-C7CAE3AD24AB"
+    },
+    "status": "WAIT_FOR_VEHICLES_DATA",
+    "memberId": null
+}
+3. Set vehicle
+{
+    "year": "string",
+    "model": {
+        "year": null,
+        "name": "string",
+        "brand": {
+            "name": "string",
+            "objectId": "006134EF-A60B-4EAB-8F83-BB0B3DD9D7B7"
+        },
+        "objectId": "F97DDE3B-AD43-4A1D-AE5E-4FEBE3A1F528"
+    },
+    "version": "string",
+    "objectId": "49DDB54C-785C-4A7E-8B15-7CF0D5CF29E4",
+    "tires": {
+        "rearTire": {
+            "diameter": 19,
+            "price": 0,
+            "width": 225,
+            "aspectRatio": 40,
+            "objectId": "73C94E4B-4985-4761-8655-6CD71C725CBF",
+            "oetype": null
+        },
+        "frontTire": {
+            "diameter": 18,
+            "price": 0,
+            "width": 225,
+            "aspectRatio": 40,
+            "objectId": "BC014C5C-DA6D-486D-94D9-3492458BED02",
+            "oetype": null
+        },
+        "objectId": "119A5F89-7889-470E-B2A6-C251DF6DE484"
+    }
+}
+
+4. Set vehicle tires
+400 - Unable to update relation. Another child object is already present in OneToOne relation and cannot be replaced with addRelation. Use the setRelation API instead. (1307)
+
+5. Create instalation point
+{
+    "zipCode": 30310,
+    "additionalInformation": "info",
+    "address": "1250 Donnelly Ave SW",
+    "aptOrSuit": "123",
+    "city": "Atlanta",
+    "coordinates": null,
+    "locationType": "home",
+    "state": "GA",
+    "objectId": "5159945A-22FE-4EDE-BB1F-469DEE0BB04E"
+}
+6. Set instalation point
+{
+    "zipCode": 30310,
+    "additionalInformation": "info",
+    "address": "1250 Donnelly Ave SW",
+    "aptOrSuit": "123",
+    "city": "Atlanta",
+    "coordinates": null,
+    "locationType": "home",
+    "state": "GA",
+    "objectId": "5159945A-22FE-4EDE-BB1F-469DEE0BB04E"
+}
+7. set Discount
+8. set time slot
+{
+    "frontTireCount": null,
+    "address": null,
+    "tireDisposal": false,
+    "woid": null,
+    "timeSlot": {
+        "fromTime": 1613434000,
+        "type": "string",
+        "toTime": 1613506392000,
+        "objectId": "026E3C3F-4971-4829-AB32-644D8BBF79BA"
+    },
+    "arrivalTo": null,
+    "installationPoint": {
+        "additionalInformation": "info",
+        "zipCode": 30310,
+        "address": "1250 Donnelly Ave SW",
+        "aptOrSuit": "123",
+        "city": "Atlanta",
+        "coordinates": {
+            "srs": {
+                "srsId": 4326,
+                "name": "WGS 84"
+            },
+            "x": -84.4283852,
+            "y": 33.7336613
+        },
+        "locationType": "home",
+        "state": "GA",
+        "objectId": "5159945A-22FE-4EDE-BB1F-469DEE0BB04E"
+    },
+    "arrivalFrom": null,
+    "services": [],
+    "vehicle": {
+        "year": "string",
+        "version": "string",
+        "objectId": "49DDB54C-785C-4A7E-8B15-7CF0D5CF29E4"
+    },
+    "troid": null,
+    "step": null,
+    "invoice": null,
+    "rearTireCount": null,
+    "objectId": "909286EC-E7C3-4EDF-9652-F257EBE35941",
+    "memberId": null,
+    "status": "WAIT_FOR_VEHICLES_DATA",
+    "customer": {
+        "reminders": false,
+        "lastName": "Order",
+        "firstName": "1Check order",
+        "zipCode": "30310",
+        "phoneNumber": "string",
+        "smsNotification": false,
+        "email": "string@asap.com",
+        "objectId": "093A012B-782E-4B46-959F-C7CAE3AD24AB"
+    }
+}
